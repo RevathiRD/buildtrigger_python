@@ -4,7 +4,7 @@ python:
     - 3.3
 env:
  global:
-   - projectID=568f48b8d78fc6fc5968c373
+   - projectID=568f7057d78fc6fc5968c42f
    - secure: Uk9S0Vu4VH3AY6AM3VyQSeMYwO2CPFb10tG98uKHyo/x1Bc30QyIODuMReBCmq7j2O3/OUCfOs9vn4EKX4FOLybgd/cMclEm8gv3E5CdsPNFIT+FmFkAX3VzTSZUREyD5ueSoLgIj4jy8kDCibk6WCz4vhHM8Wt/YriLxbP5iqknh7YSVf6JGc42N1juaVOtks2hU2Dnc/08rQFSM5qZK9+6ABgpzy6hZl5uVeUCbsBKKwaTXQzON3U85TmyVxwDCyh2kvoNOfklKQpL930nh1ZAjBId+FxMu/zV/jSStLij0ZvRqGXQtK4VKWBNFwZ/tp4qxmGdSxDeYYNUMuvtWw==
    
 #script:
@@ -14,4 +14,4 @@ install: true
 script: true
 
 after_success:
-- 'curl -H "Authorization: apiToken $apiToken" -H "Content-Type: application/json" -d "{\"projectId\": \"$projectID\"}" https://apibeta.shippable.com/projects/568f48b8d78fc6fc5968c373/newBuild'
+- 'curl -H "Authorization: apiToken $apiToken" -H "Content-Type: application/json" -d "{\"projectId\": \"$projectID\"}" https://apibeta.shippable.com/projects/568f7057d78fc6fc5968c42f/newBuild'
